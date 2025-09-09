@@ -8,10 +8,95 @@
 <body>
     <script>
 
-        let num = parseFloat(prompt('Enter your birthday date:  ' ,0)) 
-        let age = 2025 - num
-        alert(age)
+        //  Запросить у пользователя число и определить, оно положительное, отрицательное или ноль.
 
+    //     let a = parseInt(promt("Введите число: "));
+    //     if(a>0)
+    // {
+    //     alert("Положительное")
+    // }
+    // else if(a<0)
+    // {
+    //     alert("Отрицательное")
+    // }
+    // else
+    // {
+    //     alert("0")
+    // }
+
+        // 2. Запросить у пользователя его возраст и проверить корректность введенных данных (0–120 лет).
+        
+        // let age = parseInt(prompt("Введите ваш возраст: "));
+        // if age(age > 0 && age < 120)
+        // {
+        //     alert("Отлично")
+        // }
+        // else
+        // {
+        //     alert("Ты уже не живой братан")
+        // }
+
+        // 3. Запросить у пользователя число и вывести его модуль 
+        // (|7| = 7, |-7| = 7).
+
+    //     let number = parseInt(prompt("Введите числов модуле"));
+    //     if(number > 0)
+    // {
+    //     alert(number)
+    // }
+    // else
+    // {
+    //     modul = number *(-1)
+    //     alert(modul)
+    // }
+
+
+
+        // 4. Запросить у пользователя время (часы, минуты, секунды) 
+
+    //         let hours = parseInt(prompt("Введите часы: "))
+    //         let min = parseInt(prompt("Введите минуты: "));
+    //         let sec = parseInt(prompt("Введите секунды: "));
+    //     if(hours > 0  &&  hours < 24)  &&  ( min > 0 && min < 60)  &&   ( sec > 60 && sec < 0 )
+    // {
+    //     alert("correct")
+    // }
+    
+    //     else
+    // {
+    //     alert("error")
+    // }
+       
+       
+            
+        // 5. Запросить координаты точки (x, y) и определить номер 
+        // четверти, в которую попала эта точка. Необходимо учесть 
+        // случаи попадания точки на оси X или Y или в начало 
+        // координат.
+
+        let x = parseInt(prompt("Enter X: "))
+        let y = parseInt(prompt("Enter Y: "))
+        if (x > 0 && y > 0)
+    {
+        alert("1 quarter")
+    }
+
+        else if (x > 0 && y < 0)
+    {
+        alert("2 quarter")
+    }
+        else if (x < 0 && y < 0)
+    {
+        alert("3 quarter")
+    }
+    else if (x > 0 && y < 0)
+    {
+        alert("4 quarter")
+    }
+    else
+    {
+        alert("error 404 not found")
+    }
 
      </script>
 
